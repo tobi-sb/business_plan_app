@@ -159,8 +159,87 @@ ul {
 .grid-4 { grid-template-columns: repeat(4, 1fr); }
 
 @media (max-width: 768px) {
+    :root {
+        --icon-small: 1.5rem;
+        --icon-medium: 2rem;
+        --icon-large: 2.5rem;
+        --section-padding: 1.5rem;
+        --content-padding: 1.5rem;
+    }
+
     .grid-2, .grid-3, .grid-4 {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    main {
+        padding: 0.5rem;
+    }
+
+    section {
+        padding: var(--section-padding);
+        margin-bottom: 1.5rem;
+    }
+
+    .card {
+        padding: var(--content-padding);
+    }
+
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.4rem; }
+    h3 { font-size: 1.3rem; }
+    h4 { font-size: 1.2rem; }
+
+    .price {
+        font-size: 2rem;
+    }
+
+    .point-fort {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    .section-header {
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .list-item {
+        min-height: 3rem;
+        padding: 0.5rem 0;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    nav {
+        padding: 1rem 0;
+    }
+
+    .timeline-item {
+        padding-left: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --section-padding: 1.25rem;
+        --content-padding: 1.25rem;
+    }
+
+    .grid {
+        gap: 1.25rem;
+    }
+
+    .card {
+        padding: var(--content-padding);
+    }
+
+    .point-fort {
+        padding: 0.875rem;
+        margin: 0.875rem 0;
     }
 }
 
