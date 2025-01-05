@@ -1,466 +1,58 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Business Plan - Conquête de Béziers</title>
-    <link href="style.css" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <title>Select Language - Business Plan</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f9fafb;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+        .container {
+            display: flex;
+            gap: 2rem;
+        }
+        .language-option {
+            text-decoration: none;
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .language-option:hover {
+            transform: translateY(-5px);
+        }
+        .flag {
+            width: 120px;
+            height: 80px;
+            margin-bottom: 1rem;
+            border: 1px solid #eee;
+        }
+        .language-name {
+            color: #374151;
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <h1>Business Plan - Conquête de Béziers</h1>
-        </div>
-    </nav>
-
-    <main class="container">
-        <!-- Vision Section -->
-        <section>
-            <div class="section-header">
-                <i data-lucide="eye"></i>
-                <h2>Vision</h2>
-            </div>
-            <p>
-                Devenir le partenaire digital incontournable des petits commerces de Béziers en proposant des solutions modernes à prix abordables.
-            </p>
-            <div class="point-fort">
-                <strong>Contexte 2024 :</strong>
-                <span>Le marché des solutions digitales pour commerces est resté figé sur des modèles de prix d'avant l'IA (1500-2000€ pour un site). Grâce aux nouvelles technologies d'IA apparues ces dernières années, nous pouvons aujourd'hui proposer ces mêmes services pour une fraction du prix, rendant enfin le digital accessible à tous les commerces. ( et se faire un max de tune )</span>
-            </div>
-        </section>
-
-        <!-- Marché Section -->
-        <section>
-            <div class="section-header">
-                <i data-lucide="target"></i>
-                <h2>Opportunité de Marché</h2>
-            </div>
-            <div class="grid grid-2">
-                <div>
-                    <h3>Contexte Local</h3>
-                    <ul>
-                        <li class="list-item">
-                            <i data-lucide="check-circle" class="icon-green"></i>
-                            <span>Béziers : 75,000 habitants</span>
-                        </li>
-                        <li class="list-item">
-                            <i data-lucide="check-circle" class="icon-green"></i>
-                            <span>Forte présence de petits commerces traditionnels</span>
-                        </li>
-                        <li class="list-item">
-                            <i data-lucide="check-circle" class="icon-green"></i>
-                            <span>Peu de solutions digitales adaptées localement</span>
-                        </li>
-                        <li class="list-item">
-                            <i data-lucide="check-circle" class="icon-green"></i>
-                            <span>Les solutions actuelles sont hors de prix pour les petits commerces</span>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Notre Disruption</h3>
-                    <ul>
-                        <li class="list-item">
-                            <i data-lucide="zap" class="icon-yellow"></i>
-                            <span>Solutions habituellement à 1500-2000€ proposées à 15-35€/mois</span>
-                        </li>
-                        <li class="list-item">
-                            <i data-lucide="zap" class="icon-yellow"></i>
-                            <span>Support local et personnalisé</span>
-                        </li>
-                        <li class="list-item">
-                            <i data-lucide="zap" class="icon-yellow"></i>
-                            <span>Tout intégré et simple d'utilisation</span>
-                        </li>
-                        <li class="list-item">
-                            <i data-lucide="zap" class="icon-yellow"></i>
-                            <span>Prix du marché obsolètes face aux nouvelles technologies IA</span>
-                        </li>
-                        <li class="list-item">
-                            <i data-lucide="zap" class="icon-yellow"></i>
-                            <span>Solutions modernes basées sur l'IA, réduisant drastiquement les coûts de développement</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section>
-            <div class="section-header">
-                <i data-lucide="package"></i>
-                <h2>Nos Services</h2>
-            </div>
-            <div class="grid grid-3">
-                <!-- Pad Serveur -->
-                <div class="card">
-                    <div class="card-header">
-                        <i data-lucide="tablet"></i>
-                        <h3>Pad Serveur</h3>
-                    </div>
-                    <p class="price">35€<span>/mois</span></p>
-                    <div class="point-fort">
-                        <strong>Point fort :</strong>
-                        <span>Prise de commande sur tablette, envoi direct en cuisine</span>
-                    </div>
-                    <div class="point-fort">
-                        <strong>Remplace :</strong>
-                        <span>Carnet papier + multiples allers-retours</span>
-                    </div>
-                    <div class="point-fort">
-                        <strong>Clients cibles :</strong>
-                        <span>Restaurants, bars, cafés</span>
-                    </div>
-                </div>
-
-                <!-- Site Web -->
-                <div class="card">
-                    <div class="card-header">
-                        <i data-lucide="globe"></i>
-                        <h3>Sites Web</h3>
-                    </div>
-                    <p class="price">15€<span>/mois</span></p>
-                    <div class="point-fort">
-                        <strong>Point fort :</strong>
-                        <span>Création rapide grâce à l'IA, design moderne</span>
-                    </div>
-                    <div class="point-fort">
-                        <strong>Remplace :</strong>
-                        <span>Agences web à 1500€+</span>
-                    </div>
-                    <div class="point-fort">
-                        <strong>Clients cibles :</strong>
-                        <span>Tous commerces, artisans, restaurants etc ...</span>
-                    </div>
-                </div>
-
-                <!-- Gestion Stock -->
-                <div class="card">
-                    <div class="card-header">
-                        <i data-lucide="box"></i>
-                        <h3>Gestion Stock</h3>
-                    </div>
-                    <p class="price">25€<span>/mois</span></p>
-                    <div class="point-fort">
-                        <strong>Point fort :</strong>
-                        <span>Scan rapide + alertes stocks bas</span>
-                    </div>
-                    <div class="point-fort">
-                        <strong>Remplace :</strong>
-                        <span>Logiciels complexes à 50€+/mois</span>
-                    </div>
-                    <div class="point-fort">
-                        <strong>Clients cibles :</strong>
-                        <span>Boutiques, épiceries, cavistes, magasins de vêtements</span>
-                    </div>
-                </div>
-
-                <!-- Système Réservation -->
-                <div class="card">
-                    <div class="card-header">
-                        <i data-lucide="calendar"></i>
-                        <h3>Système Réservation</h3>
-                    </div>
-                    <p class="price">20€<span>/mois</span></p>
-                    <div class="point-fort">
-                        <strong>Point fort :</strong>
-                        <span>Notifications auto + agenda synchronisé</span>
-                    </div>
-                    <div class="point-fort">
-                        <strong>Remplace :</strong>
-                        <span>Solutions type Reservio à 50€+/mois</span>
-                    </div>
-                    <div class="point-fort">
-                        <strong>Clients cibles :</strong>
-                        <span>Tous commerces, artisans, restaurants etc ...</span>
-                    </div>
-                </div>
-
-                <!-- Menu Digital -->
-                <div class="card">
-                    <div class="card-header">
-                        <i data-lucide="menu"></i>
-                        <h3>Menu Digital</h3>
-                    </div>
-                    <p class="price">15€<span>/mois</span></p>
-                    <div class="point-fort">
-                        <strong>Point fort :</strong>
-                        <span>QR code sur table, mise à jour instantanée</span>
-                    </div>
-                    <div class="point-fort">
-                        <strong>Remplace :</strong>
-                        <span>Menus papier à réimprimer</span>
-                    </div>
-                    <div class="point-fort">
-                        <strong>Clients cibles :</strong>
-                        <span>Restaurants, bars, cafés, food trucks</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Packs Section -->
-            <div class="packs-section">
-                <h3>Offres Groupées</h3>
-                <div class="grid grid-4">
-                    <div class="card">
-                        <h4>Pad + Menu Digital</h4>
-                        <p class="price">45€<span>/mois</span></p>
-                    </div>
-                    <div class="card">
-                        <h4>Pad + Stock</h4>
-                        <p class="price">50€<span>/mois</span></p>
-                    </div>
-                    <div class="card">
-                        <h4>Site + Réservation</h4>
-                        <p class="price">30€<span>/mois</span></p>
-                    </div>
-                    <div class="card highlight">
-                        <h4>Pack Complet Restaurant</h4>
-                        <p class="price">75€<span>/mois</span></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Déploiement Section -->
-        <section>
-            <div class="section-header">
-                <i data-lucide="rocket"></i>
-                <h2>Stratégie de Déploiement</h2>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <h3>Phase 1 : Application Tourisme (0-6 mois)</h3>
-                    <ul>
-                        <li class="list-item">
-                            <i data-lucide="check" class="icon-green"></i>
-                            <span>Lancement de l'application de tourisme pour Béziers</span>
-                        </li>
-                        <li class="list-item">
-                            <i data-lucide="check" class="icon-green"></i>
-                            <span>Démarchage des commerces pour présence sur l'application</span>
-                        </li>
-                        <li class="list-item">
-                            <i data-lucide="check" class="icon-green"></i>
-                            <span>Analyse des besoins spécifiques de chaque commerce</span>
-                        </li>
-                        <li class="list-item">
-                            <i data-lucide="check" class="icon-green"></i>
-                            <span>Création d'une base de données de contacts qualifiés</span>
-                        </li>
-                    </ul>
-                    <div class="objective">Objectif : 50 commerces référencés sur l'application</div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <h3>Phase 2 : Conversion Services (6-12 mois)</h3>
-                    <ul>
-                        <li class="list-item">
-                            <i data-lucide="check" class="icon-green"></i>
-                            <span>Proposition de services adaptés selon les besoins identifiés</span>
-                        </li>
-                        <li class="list-item">
-                            <i data-lucide="check" class="icon-green"></i>
-                            <span>Déploiement personnalisé pour chaque type de commerce</span>
-                        </li>
-                        <li class="list-item">
-                            <i data-lucide="check" class="icon-green"></i>
-                            <span>Focus sur la satisfaction et le bouche-à-oreille</span>
-                        </li>
-                        <li class="list-item">
-                            <i data-lucide="check" class="icon-green"></i>
-                            <span>Création de cas d'usage par secteur</span>
-                        </li>
-                    </ul>
-                    <div class="objective">Objectif : 20 clients utilisant nos services digitaux</div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <h3>Phase 3 : Expansion Multi-Secteurs (12-18 mois)</h3>
-                    <ul>
-                        <li class="list-item">
-                            <i data-lucide="check" class="icon-green"></i>
-                            <span>Élargissement à tous types de commerces : artisans, boutiques, restaurants</span>
-                        </li>
-                        <li class="list-item">
-                            <i data-lucide="check" class="icon-green"></i>
-                            <span>Adaptation des services selon les retours terrain</span>
-                        </li>
-                        <li class="list-item">
-                            <i data-lucide="check" class="icon-green"></i>
-                            <span>Développement de solutions spécifiques par secteur</span>
-                        </li>
-                        <li class="list-item">
-                            <i data-lucide="check" class="icon-green"></i>
-                            <span>Renforcement de la présence sur l'application tourisme</span>
-                        </li>
-                    </ul>
-                    <div class="objective">Objectif : 40 clients actifs multi-secteurs</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Financier Section -->
-        <section>
-            <div class="section-header">
-                <i data-lucide="trending-up"></i>
-                <h2>Projections Financières</h2>
-            </div>
-            <div class="grid grid-2">
-                <div class="card">
-                    <h3>Année 1</h3>
-                    <p class="price">10,800€<span>ARR</span></p>
-                    <ul>
-                        <li class="list-item">
-                            <i data-lucide="users" class="icon-green"></i>
-                            <span>20 clients x 45€ (moyenne)</span>
-                        </li>
-                        <li class="list-item">
-                            <i data-lucide="tool" class="icon-green"></i>
-                            <span>Investissement en matériel : 3,000€</span>
-                        </li>
-                        <li class="list-item">
-                            <i data-lucide="target" class="icon-green"></i>
-                            <span>Focus qualité de service et satisfaction client</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>Année 2</h3>
-                    <p class="price">26,400€<span>ARR</span></p>
-                    <ul>
-                        <li class="list-item">
-                            <i data-lucide="users" class="icon-green"></i>
-                            <span>40 clients x 55€ (moyenne)</span>
-                        </li>
-                        <li class="list-item">
-                            <i data-lucide="trending-up" class="icon-green"></i>
-                            <span>Économies d'échelle</span>
-                        </li>
-                        <li class="list-item">
-                            <i data-lucide="check-circle" class="icon-green"></i>
-                            <span>Infrastructure rentabilisée</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Avantages Section -->
-        <section>
-            <div class="section-header">
-                <i data-lucide="award"></i>
-                <h2>Avantages Compétitifs</h2>
-            </div>
-            <div class="grid grid-3">
-                <div class="card">
-                    <div class="card-header">
-                        <i data-lucide="map-pin"></i>
-                        <h3>Présence Locale</h3>
-                    </div>
-                    <p>Support personnalisé et proximité client</p>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <i data-lucide="euro"></i>
-                        <h3>Prix Disruptifs</h3>
-                    </div>
-                    <p>Solutions abordables et transparentes</p>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <i data-lucide="zap"></i>
-                        <h3>Solutions Intégrées</h3>
-                    </div>
-                    <p>Écosystème complet et simple d'utilisation</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Marketing Section -->
-        <section>
-            <div class="section-header">
-                <i data-lucide="megaphone"></i>
-                <h2>Stratégie Marketing</h2>
-            </div>
-            <div class="grid grid-4">
-                <div class="card">
-                    <div class="card-header">
-                        <i data-lucide="presentation"></i>
-                        <h3>Démonstrations</h3>
-                    </div>
-                    <p>Démonstrations sur place</p>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <i data-lucide="message-circle"></i>
-                        <h3>Témoignages</h3>
-                    </div>
-                    <p>Témoignages clients locaux</p>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <i data-lucide="calendar"></i>
-                        <h3>Événements</h3>
-                    </div>
-                    <p>Présence événements locaux</p>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <i data-lucide="users"></i>
-                        <h3>Partenariats</h3>
-                    </div>
-                    <p>Partenariats locaux</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Risques Section -->
-        <section>
-            <div class="section-header">
-                <i data-lucide="alert-triangle"></i>
-                <h2>Risques et Mitigation</h2>
-            </div>
-            <div class="grid grid-3">
-                <div class="card">
-                    <div class="card-header">
-                        <i data-lucide="refresh-ccw" class="icon-orange"></i>
-                        <h3>Résistance au changement</h3>
-                    </div>
-                    <p>Formation et accompagnement intensif</p>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <i data-lucide="swords" class="icon-orange"></i>
-                        <h3>Concurrence</h3>
-                    </div>
-                    <p>Rapidité d'exécution et présence locale</p>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <i data-lucide="cpu" class="icon-orange"></i>
-                        <h3>Technique</h3>
-                    </div>
-                    <p>Architecture robuste et support réactif</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <script>
-        lucide.createIcons({
-            attrs: {
-                class: ["lucide"],
-                stroke: "currentColor",
-                "stroke-width": "2",
-                "stroke-linecap": "round",
-                "stroke-linejoin": "round",
-                fill: "none"
-            }
-        });
-    </script>
+    <div class="container">
+        <a href="business_plan_fr.html" class="language-option">
+            <img src="https://flagcdn.com/h80/fr.png" class="flag" alt="French Flag">
+            <div class="language-name">Français</div>
+        </a>
+        <a href="business_plan_en.html" class="language-option">
+            <img src="https://flagcdn.com/h80/gb.png" class="flag" alt="English Flag">
+            <div class="language-name">English</div>
+        </a>
+    </div>
 </body>
-</html>
+</html> 
